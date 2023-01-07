@@ -10,6 +10,19 @@ class scanController extends Controller
         return view('scan');
     }
     public function validasi(Request $request){
-        dd($request->all());
+        $qr=$request->qr_code;
+        print_r($qr);
+        // $data='123';
+        // if($qr==$data){
+        //   return response()->json([
+        //     'statuss' =>200,
+        //   ]);
+        // }
+        // else{
+        //     return response()->json([
+        //         'statuss' =>400,
+        //       ]);
+        // }
+      
     }
 }

@@ -107,16 +107,17 @@
                         <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
                             <h1 class="wow fadeIn">Bootstrap 4 Template with <strong>Sidebar Menu</strong></h1>
                             <div class="description wow fadeInLeft">
-                                <div id="reader" width="600px"></div>
+                                <div name="reader" id="reader" width="600px" ></div>
                             </div>
                             <div class="buttons wow fadeInUp">
                                 <a class="btn btn-primary btn-customized scroll-link" href="#section-1" role="button">
-                                    <i class="fas fa-download"></i> Learn More
+                                    <i class="fas fa-download"></i> Download
                                 </a>
                                 <a class="btn btn-primary btn-customized-2 scroll-link" href="#section-3" role="button">
                                     <i class="fas fa-pencil-alt"></i> Our Projects
                                 </a>
                             </div>
+                            <input type="text" name="result" id="result">
                             <input type="hidden" name="result" id="result">
                         </div>
 
@@ -143,30 +144,29 @@
     <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="assets/js/scripts.js"></script>
     <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
-    <script>
+      <script>
         function onScanSuccess(decodedText, decodedResult) {
-            $('#result').val(decodedText);
-            let id = decodedText;
+            // $('#result').val(decodedText);
+            // let id = decodedText;
             html5QrcodeScanner.clear().then(_ => {
                 var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
                 $.ajax({
 
-                    url: "{{ route('validasi') }}",
-                    type: 'POST',
-                    data: {
-                        _methode: "POST",
-                        _token: CSRF_TOKEN,
-                        qr_code: id
-                    },
-                    success: function(response) {
-                        console.log(response);
-                        if (response.status == 200) {
-                            alert('berhasil');
-                        } else {
-                            alert('gagal');
-                        }
+                    // url: "{{ route('validasi') }}",
+                    // type: 'POST',
+                    // data: {
+                    //     _methode: "POST",
+                    //     _token: CSRF_TOKEN,
+                    //     qr_code: id
+                    // },
+                    // // success: function(response) {
+                    // //     if (response.status == 200) {
+                    // //         alert('berhasil');
+                    // //     } else {
+                    // //         alert('gagal');
+                    // //     }
 
-                    }
+                    // // }
                 });
             }).catch(error => {
                 alert('something wrong');
