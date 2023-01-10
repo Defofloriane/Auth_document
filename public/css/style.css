@@ -1,0 +1,107 @@
+
+@media only screen and (min-width: 960px) {
+    /* styles pour les navigateurs de plus de 960 px  */
+    .card{
+        display: grid;
+        grid-template-columns: 350px;
+        grid-template-rows: 350px;
+        background-color: white;
+    
+    }
+    .card .wrapper{
+        border-radius: 10px;
+    }
+    .wrapper .scanner{
+        animation-play-state: running;
+        z-index: 2;
+    }
+    .camera{
+        height: 350px;
+        width: 450px;
+    }
+    
+    .scanner{
+        width: 130%;
+        height: 3px;
+        background-color: rgb(253, 107, 107);
+        opacity: 0.7;
+        position: relative;
+        box-shadow: 0px 0px 8px 10px rgba(170, 11, 23, 0.49) ;
+        animation-name: scan;
+        animation-duration:4s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        /* animation-play-state: running; */
+        animation-play-state: paused;
+    }
+}
+@media only screen and (min-width: 1440px) {
+    /* styles pour les navigateurs de plus de 1440px ; */
+}
+@media only screen and (min-width: 2000px) {
+    /*  pour les écrans de taille sumo (mac)  */
+}
+@media only screen and (max-device-width: 480px) {
+   /* styles pour les navigateurs mobiles inférieurs à 480px ; (iPhone) */
+   .card{
+    display: grid;
+    grid-template-columns: 150px;
+    grid-template-rows: 150px;
+    background-color: white;
+
+}
+.card .wrapper{
+    border-radius: 10px;
+}
+.wrapper .scanner{
+    animation-play-state: running;
+    z-index: 2;
+}
+.camera{
+    height: 100px;
+    width: 190px;
+}
+
+.scanner{
+    width: 130%;
+    height: 3px;
+    background-color: rgb(253, 107, 107);
+    opacity: 0.7;
+    position: relative;
+    box-shadow: 0px 0px 8px 10px rgba(170, 11, 23, 0.49) ;
+    animation-name: scan;
+    animation-duration:4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* animation-play-state: running; */
+    animation-play-state: paused;
+}
+
+ 
+}
+@media only screen and (device-width: 768px) {
+   /* écrans iPad par défaut  */
+}
+/* different techniques for iPad screening */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+  /*Pour les mises en page portrait uniquement * */
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  /* For landscape layouts only */
+}
+
+@keyframes scan {
+    0%{
+        box-shadow: 0px 0px 8px 10px rgba(170, 11, 23, 0.49) ;
+        top: 50%;
+    }
+    25%{
+        box-shadow: 0px 6px 8px 10px rgba(170, 11, 23, 0.49) ;
+        top: 5px;
+    }
+    75%{
+        box-shadow: 0px -6px 8px 10px rgba(170, 11, 23, 0.49) ;
+        top: 98%;
+    }
+}
