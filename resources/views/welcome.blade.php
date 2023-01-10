@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
      
@@ -20,7 +21,11 @@
         @if(session()->has('sucess'))
           <p>Masuk</p>
         @endif
-    <video id="preview"></video>
+        <div class="wrapper">
+          <div class="scanner"></div>
+          <video class="camera" id="preview"></video>
+        </div>
+ 
     <form action="{{url('/store')}}" method="post" id="form">
         @csrf
           <input type="hidden" name="id_siswa" id="id_siswa">
