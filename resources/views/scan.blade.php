@@ -147,7 +147,7 @@
       <script>
         function onScanSuccess(decodedText, decodedResult) {
             // $('#result').val(decodedText);
-            // let id = decodedText;
+            // let id = decodedText; 
             html5QrcodeScanner.clear().then(_ => {
                 var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
                 $.ajax({
