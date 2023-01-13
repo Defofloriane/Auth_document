@@ -85,7 +85,7 @@
     <input type="radio" name="options" value="1" autocomplete="off" checked> Front Camera
   </label>
   <label class="btn btn-secondary">
-    <input type="radio" name="options" value="2" autocomplete="off"> Back Camera
+    <input type="radio" name="options" value="2" autocomplete="off"> Back 
   </label>
 </div>
 
