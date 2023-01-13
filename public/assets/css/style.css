@@ -264,7 +264,14 @@ a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disa
 a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
 	outline: 0; background: #555; border: 0; color: #fff; box-shadow: none;
 }
-
+body{
+	
+	background: url(../img/backgrounds/1.jpg);
+}
+.reader{
+	width: 50%;
+	height: 50%;
+}
 
 /***** General style, all sections *****/
 
@@ -293,7 +300,7 @@ a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disa
 
 /***** Top content *****/
 
-.top-content { width: 100%; padding: 60px 0 120px 0; }
+.top { width: 100%; padding: 60px 0 120px 0;}
 
 .top-content h1 { padding-top: 60px; color: #fff; }
 .top-content .description { margin: 30px 0 0 0; padding-bottom: 30px; }

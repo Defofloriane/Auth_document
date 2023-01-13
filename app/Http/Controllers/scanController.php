@@ -10,19 +10,14 @@ class scanController extends Controller
         return view('scan');
     }
     public function validasi(Request $request){
-        $qr=$request->qr_code;
-        print_r($qr);
-        // $data='123';
-        // if($qr==$data){
-        //   return response()->json([
-        //     'statuss' =>200,
-        //   ]);
-        // }
-        // else{
-        //     return response()->json([
-        //         'statuss' =>400,
-        //       ]);
-        // }
+        $qr=$request->reader;
+        if($qr=='O1FsrCU8IAzFn9SjVSSZlpp9drhHhQNRYp1Jr74j'){
+          return  redirect('/validasi')->with('your',$qr);
+        }
+        else{
+          return  redirect('/validasi')->with('my',$qr);
+        }
+ 
       
     }
 }
