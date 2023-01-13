@@ -3,7 +3,7 @@
     /* styles pour les navigateurs de plus de 960 px  */
     .card{
         display: grid;
-        grid-template-columns: 350px;
+        grid-template-columns: 340px;
         grid-template-rows: 350px;
         background-color: white;
         width: 100%;
@@ -19,10 +19,14 @@
     .camera{
         height: 350px;
         width: 430px;
+        margin-left: 10px;
     }
-    
+    .bbtn{
+       text-align: center;
+    }
     .scanner{
-        width: 125%;
+        margin-left: 10px;
+        width: 127%;
         height: 3px;
         background-color: rgb(253, 107, 107);
         opacity: 0.7;

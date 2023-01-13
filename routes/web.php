@@ -14,6 +14,7 @@ Route::get('/', function () {
 });
 Route::get('/scan',[scanController::class,'scan'])->name('scan');
 Route::get('/qrcode',[Qrcodegenerate::class,'qrcode'])->name('qrcode');
+Route::get('/login',[Qrcodegenerate::class,'login'])->name('login');
 Route::get('/export_pdf',[Qrcodegenerate::class,'export_pdf'])->name('export_pdf');
 Route::post('/validasi',[scanController::class,'validasi'])->name('validasi');
 Route::post('/store',[AbsenController::class,'store'])->name('store');

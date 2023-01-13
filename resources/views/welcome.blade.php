@@ -8,11 +8,12 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
+ 
   <div class="container col-lg-4 py-5">
     <div>
       @if(session()->has('gagal'))
@@ -46,7 +47,7 @@
         @csrf
         <input type="hidden" name="id_siswa" id="id_siswa">
       </form>
-      <div class="btn-group btn-group-toggle mb-5" data-toggle="buttons">
+      <div class="btn-group btn-group-toggle mb-5 bbtn" data-toggle="buttons">
         <label class="btn btn-primary active">
           <input type="radio" name="options" value="1" autocomplete="off" checked> Front Camera
         </label>
@@ -57,7 +58,7 @@
     </div>
 
   </div>
-
+  </section>
   <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
   <script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
   <link rel="stylesheet" href="assets/css/style.css">

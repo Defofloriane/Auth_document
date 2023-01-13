@@ -34,7 +34,10 @@ class Qrcodegenerate extends Controller
     $dompdf->stream("qrcode");
     
 
- }                    
+ }    
+ function login(){
+   return view('login');
+ }                
 }
 
  
