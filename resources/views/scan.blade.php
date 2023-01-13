@@ -101,8 +101,8 @@
             </a>
 
             <!-- Top content -->
-            <div class="top-content section-container" id="top-content">
-                <div class="container">
+            <div class="top section-container" id="top-content">
+              
                     <div class="row">
                         <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
                             <h1 class="wow fadeIn">Bootstrap 4 Template with <strong>Sidebar Menu</strong></h1>
@@ -122,7 +122,7 @@
                         </div>
 
                     </div>
-                </div>
+              
             </div>
 
 
@@ -146,28 +146,27 @@
     <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
       <script>
         function onScanSuccess(decodedText, decodedResult) {
-            // $('#result').val(decodedText);
-            // let id = decodedText; 
+             $('#result').val(decodedText);
             html5QrcodeScanner.clear().then(_ => {
-                var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
-                $.ajax({
+                // var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+                // $.ajax({
 
-                    // url: "{{ route('validasi') }}",
-                    // type: 'POST',
-                    // data: {
-                    //     _methode: "POST",
-                    //     _token: CSRF_TOKEN,
-                    //     qr_code: id
-                    // },
-                    // // success: function(response) {
-                    // //     if (response.status == 200) {
-                    // //         alert('berhasil');
-                    // //     } else {
-                    // //         alert('gagal');
-                    // //     }
+                //     // url: "{{ route('validasi') }}",
+                //     // type: 'POST',
+                //     // data: {
+                //     //     _methode: "POST",
+                //     //     _token: CSRF_TOKEN,
+                //     //     qr_code: id
+                //     // },
+                //     // // success: function(response) {
+                //     // //     if (response.status == 200) {
+                //     // //         alert('berhasil');
+                //     // //     } else {
+                //     // //         alert('gagal');
+                //     // //     }
 
-                    // // }
-                });
+                //     // // }
+                // });
             }).catch(error => {
                 alert('something wrong');
             });
