@@ -13,7 +13,7 @@ class AbsenController extends Controller
          'tanggal' => date('Y-m-d'),
        ])->first();
        if($cek){
-        return redirect('/store')->with('gagal', 'anda suda absen');
+        return redirect('/')->with('gagal', 'Document Authentique');
        }
        else{
        Absen::create(
@@ -22,7 +22,7 @@ class AbsenController extends Controller
           'tanggal' => date('Y-m-d'),
         ]
         );
-       return redirect('/store')->with('sucess', 'silahkan masuk');
+       return redirect('/')->with('sucess', 'Document Non Authentique');
       }
     }
 }

@@ -39,7 +39,7 @@
     <div>
         <?php 
         $type = 'png';
-$data = file_get_contents('https://api.qrserver.com/v1/create-qr-code/?data=Floriane&amp;size=200x200');
+$data = file_get_contents('https://api.qrserver.com/v1/create-qr-code/?data=122&amp;size=200x200');
 $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
 ?>
 <?php echo '<div class="company-logo">
