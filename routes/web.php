@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AbsenController;
+use App\Http\Controllers\mapping;
 use App\Http\Controllers\Qrcodegenerate;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\scanController;
@@ -30,3 +31,4 @@ Route::post('/custom-registration', [UserControllers::class, 'customRegistration
 Route::get('/signout', [UserControllers::class, 'signOut'])->name('signout');
 //route Home
 Route::get('/page1', [Qrcodegenerate::class,'page1'])->name('page1');
+Route::get('/mapping', [mapping::class,'mapping'])->name('mapping');

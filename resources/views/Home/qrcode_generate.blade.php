@@ -145,7 +145,13 @@
                     <span> UNIVERSITY OF YAOUNDE 1 </span>
                 </div>
             </section>
-            
+            <div>
+                @foreach ($user as $col)
+                    <li>
+                        {{$col->email}}
+                    </li>               
+                @endforeach
+            </div>
         </header>
         <section class="w-100 d-flex flex-column align-items-center py-4" style="padding-bottom: 0px !important">
             <span class="fs-5 fw-normal"> FACULTE DES SCIENCES </span>
