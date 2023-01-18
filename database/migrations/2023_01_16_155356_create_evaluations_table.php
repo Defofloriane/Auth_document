@@ -14,7 +14,7 @@ class CreateEvaluationsTable extends Migration
     public function up()
     {
         Schema::create('evaluations', function (Blueprint $table) {
-            $table->string('id_exam')->primary();
+            $table->id('id_exam');
             $table->date('dateExam');
             $table->integer('noteSur');
             $table->string('typeExam');

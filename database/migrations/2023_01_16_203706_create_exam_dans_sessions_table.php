@@ -14,11 +14,11 @@ class CreateExamDansSessionsTable extends Migration
     public function up()
     {
         Schema::create('exam_dans_sessions', function (Blueprint $table) {
-            $table->string('ue');
+            $table->unsignedBigInteger('ue');
             $table->foreign('ue')->references('id_ue')->on('ues')->onDelete('cascade');
-            $table->string('session');
+            $table->unsignedBigInteger('session');
             $table->foreign('session')->references('id_session')->on('sessions')->onDelete('cascade');
-            $table->string('exam');
+            $table->unsignedBigInteger('exam');
             $table->foreign('exam')->references('id_exam')->on('evaluations')->onDelete('cascade');
             $table->timestamps();
         });

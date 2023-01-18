@@ -17,11 +17,11 @@ class CreateEstInscritsTable extends Migration
                   
             $table->string('matEtudiant');
             $table->foreign('matEtudiant')->references('matricule')->on('Etudiants')->onDelete('cascade');
-            $table->string('niveau');
+            $table->unsignedBigInteger('niveau');
             $table->foreign('niveau')->references('id_niveau')->on('niveaux')->onDelete('cascade');
-            $table->string('filiere');
+            $table->unsignedBigInteger('filiere');
             $table->foreign('filiere')->references('id_filiere')->on('filieres')->onDelete('cascade');
-            $table->string('annee');
+            $table->unsignedBigInteger('annee');
             $table->foreign('annee')->references('id_anneeAcademique')->on('annee_academiques')->onDelete('cascade');
             $table->timestamps();
         });

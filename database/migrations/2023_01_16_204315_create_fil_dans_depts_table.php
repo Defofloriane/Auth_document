@@ -14,7 +14,7 @@ class CreateFilDansDeptsTable extends Migration
     public function up()
     {
         Schema::create('fil_dans_depts', function (Blueprint $table) {
-            $table->string('departement');
+            $table->unsignedBigInteger('departement');
             $table->foreign('departement')->references('id_departement')->on('departements')->onDelete('cascade');   
             $table->timestamps();
         });

@@ -16,9 +16,9 @@ class CreateParticipesTable extends Migration
         Schema::create('participes', function (Blueprint $table) {
             $table->string('matEtudiant');
             $table->foreign('matEtudiant')->references('matricule')->on('Etudiants')->onDelete('cascade');
-            $table->string('ue');
+            $table->unsignedBigInteger('ue');
             $table->foreign('ue')->references('id_ue')->on('ues')->onDelete('cascade');
-            $table->string('examen');
+            $table->unsignedBigInteger('examen');
             $table->foreign('examen')->references('id_exam')->on('evaluations')->onDelete('cascade');
             $table->float('note');
             $table->timestamps();

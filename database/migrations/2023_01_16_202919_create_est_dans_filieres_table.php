@@ -14,11 +14,11 @@ class CreateEstDansFilieresTable extends Migration
     public function up()
     {
         Schema::create('est_dans_filieres', function (Blueprint $table) {
-            $table->string('ue');
+            $table->unsignedBigInteger('ue');
             $table->foreign('ue')->references('id_ue')->on('ues')->onDelete('cascade');
-            $table->string('niveau');
+            $table->unsignedBigInteger('niveau');
             $table->foreign('niveau')->references('id_niveau')->on('niveaux')->onDelete('cascade');
-            $table->string('filiere');
+            $table->unsignedBigInteger('filiere');
             $table->foreign('filiere')->references('id_filiere')->on('filieres')->onDelete('cascade');
             $table->timestamps();
         });

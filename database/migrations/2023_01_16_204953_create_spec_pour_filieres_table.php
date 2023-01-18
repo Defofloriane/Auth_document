@@ -14,11 +14,11 @@ class CreateSpecPourFilieresTable extends Migration
     public function up()
     {
         Schema::create('spec_pour_filieres', function (Blueprint $table) {
-            $table->string('specialite');
+            $table->unsignedBigInteger('specialite');
             $table->foreign('specialite')->references('id_specialite')->on('specialites')->onDelete('cascade');
-            $table->string('niveau');
+            $table->unsignedBigInteger('niveau');
             $table->foreign('niveau')->references('id_niveau')->on('niveaux')->onDelete('cascade');
-            $table->string('filiere');
+            $table->unsignedBigInteger('filiere');
             $table->foreign('filiere')->references('id_filiere')->on('filieres')->onDelete('cascade');
             $table->timestamps();
         });

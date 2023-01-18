@@ -9,8 +9,7 @@ class PostController extends Controller
 {
     public function getAllPost()
     {
-        $posts = DB::select('select * from posts where id = ?', [2]);
- 
+        $posts = DB::select('select * from ues where id_ue = ?', [2]);
         return view('posts', compact('posts'));
     }
 }

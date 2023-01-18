@@ -15,9 +15,9 @@ class CreateSessionDansAnneeAcsTable extends Migration
     {
         Schema::create('session_dans_annee_acs', function (Blueprint $table) {
       
-            $table->string('session');
+            $table->unsignedBigInteger('session');
             $table->foreign('session')->references('id_session')->on('sessions')->onDelete('cascade');
-            $table->string('annee_ac');
+            $table->unsignedBigInteger('annee_ac');
             $table->foreign('annee_ac')->references('id_anneeAcademique')->on('annee_academiques')->onDelete('cascade');
             $table->timestamps();
         });

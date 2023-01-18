@@ -14,7 +14,7 @@ class CreateUesTable extends Migration
     public function up()
     {
         Schema::create('ues', function (Blueprint $table) {
-            $table->string('id_ue')->primary();
+            $table->id('id_ue');
             $table->string('codeUe');
             $table->string('intitule');
             $table->integer('nbreCredit');
