@@ -16,12 +16,12 @@ class AbsenController extends Controller
         return redirect('/')->with('gagal', 'Document Authentique');
        }
        else{
-       Absen::create(
-        [
-          'id_siswa' => $request->id_siswa,
-          'tanggal' => date('Y-m-d'),
-        ]
-        );
+      //  Absen::create(
+      //   [            
+      //     'id_siswa' => $request->id_siswa,
+      //     'tanggal' => date('Y-m-d'),
+      //   ]
+      //   );
        return redirect('/')->with('sucess', 'Document Non Authentique');
       }
     }
