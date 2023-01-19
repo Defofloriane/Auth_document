@@ -168,7 +168,7 @@
                             <span class="fs-5 fw-bolder bold_part"> Noms et Prénoms: </span>
                             <span class="english_subtitle"> Surname and Name </span>
                         </div>
-                        <div class="form-value ps-4 pt-1 text-uppercase">MATHEO DAVID</div>
+                        <div class="form-value ps-4 pt-1 text-uppercase">MATHEO ZOULO</div>
                     </div>
                     <div class="d-flex form-item">
                         <div class="d-flex flex-column">
@@ -506,7 +506,7 @@
 
                             <?php
                             $type = 'png';
-                            $data = file_get_contents('https://api.qrserver.com/v1/create-qr-code/?data=124&amp;size=100x100');
+                            $data = file_get_contents('https://api.qrserver.com/v1/create-qr-code/?data=20U4660&amp;size=100x100');
                             $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
                             ?>
                             <?php echo '<div class="company-logo">
@@ -534,8 +534,8 @@
             </section>
             
         </main>
-        <a class="btn btn-primary" href="{{ route('export_pdf') }}"
-        wire:click="export_pdfs()">Export pdf</a>
+        {{-- <a class="btn btn-primary" href="{{ route('export_pdf') }}"
+        wire:click="export_pdfs()">Export pdf</a> --}}
     </div>
 
 </body>

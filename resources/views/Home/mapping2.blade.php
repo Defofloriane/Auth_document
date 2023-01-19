@@ -15,17 +15,17 @@
     </header>
     <div class="l-navbar" id="nav-bar">
         <nav class="nav">
-            <div> <a href="#" class="nav_logo active"> <i class='bx bx-layer nav_logo-icon'></i>
+            <div> <a href="{{route('welcome')}}" class="nav_logo active"> <i class='bx bx-layer nav_logo-icon'></i>
                         <span
-                            class="nav_logo-name">BBBootstrap
+                            class="nav_logo-name">Scanner Qrcode
                         </span>
                   </a>
                 <div class="nav_list">
-                         <a href="{{route('mapping1')}}" class="nav_link ">
+                         <a href="" class="nav_link ">
                                 <i class='bx bx-grid-alt nav_icon'></i> 
                                 <span class="nav_name">Dashboard</span>
                             </a>
-                    <a href="" class="nav_link">
+                    <a href="{{route('mapping')}}" class="nav_link">
                         <i class='bx bx-user nav_icon'></i> 
                         <span class="nav_name">Releve</span>
                        
