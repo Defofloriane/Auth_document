@@ -31,6 +31,24 @@ class EtudiantSeeder extends Seeder
                 "lieuNaissance"=>"Magbe",
                 "sexe"=>"Homme"
             ],
+            [   
+                "matricule"=>"20R2198",
+                "nom"=>"EZO'O ",
+                "prenom"=>"DAVID",
+                "dateNaissance"=>"2001-04-08",
+                "lieuNaissance"=>"YOUNDE",
+                "sexe"=>"Homme"
+            ],
+            [   
+                "matricule"=>"19G2521",
+                "nom"=>"kANOU ",
+                "prenom"=>"FOKOU",
+                "dateNaissance"=>"2002-01-01",
+                "lieuNaissance"=>"Baffoussam",
+                "sexe"=>"Femme"
+            ],
+          
+            
             ];
 
               Etudiant::insert($etudiant);

@@ -169,7 +169,7 @@
                             <span class="fs-5 fw-bolder bold_part"> Matricule: </span>
                             <span class="english_subtitle"> Registration N° </span>
                         </div>
-                        <div class="form-value ps-4 pt-1">20U4660</div>
+                        <div class="form-value ps-4 pt-1">20R2198</div>
                     </div>
                 </section>
                 <section class="w-100 d-flex align-items-center justify-content-start">
@@ -178,7 +178,7 @@
                             <span class="fs-5 fw-bolder bold_part"> Né(e) le: </span>
                             <span class="english_subtitle"> Born on </span>
                         </div>
-                        <div class="form-value ps-4 pt-1 text-uppercase">25/04/2000</div>
+                        <div class="form-value ps-4 pt-1 text-uppercase">04/08/2001</div>
                     </div>
                     &nbsp;
                     <div class="d-flex form-item ms-5 ps-5">
@@ -186,7 +186,7 @@
                             <span class="fs-5 fw-bolder bold_part"> A: </span>
                             <span class="english_subtitle"> At </span>
                         </div>
-                        <div class="form-value ps-4 pt-1">DOUALA</div>
+                        <div class="form-value ps-4 pt-1">YAOUNDE</div>
                     </div>
                 </section>
                 <section class="w-100 d-flex align-items-center justify-content-start">
@@ -196,7 +196,7 @@
                             <span class="english_subtitle"> Domain </span>
                         </div>
                         <div class="form-value ps-4 pt-1 text-uppercase">
-                            SCIENCES MATHEMATIQUES ET INFORMATIQUE
+                            SCIENCES MATHEMATIQUES ET INFORMATIQUES
                         </div>
                     </div>
                 </section>
@@ -206,7 +206,7 @@
                             <span class="fs-5 fw-bolder bold_part">Niveau : &nbsp;</span>
                             <span class="english_subtitle"> Level </span>
                         </div>
-                        <div class="form-value ps-4 pt-1 text-uppercase">License 1</div>
+                        <div class="form-value ps-4 pt-1 text-uppercase">LICENSE 2</div>
                     </div>
                   
                     <div class="d-flex form-item ms-5 ps-5">
@@ -214,7 +214,7 @@
                             <span class="fs-5 fw-bolder bold_part"> Filière :  &nbsp;</span>
                             <span class="english_subtitle"> Discipline </span>
                         </div>
-                        <div class="form-value ps-4 pt-1">INFORMATIQUE</div>
+                        <div class="form-value ps-4 pt-1">INFORMATION AND COMMUNICATION TECHNOLOGY FOR DEVELOPMENT</div>
                     </div>
                 </section>
   
@@ -282,64 +282,114 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>INF 2026</td>
-                            <td>Statistiques et analyse des données</td>
-                            <td>6</td>
-                            <td>74</td>
-                            <td>B+</td>
-                            <td>2</td>
+                            <td>ENGL203</td>
+                            <td>ENGLISH II/</td>
+                            <td>3</td>
+                            <td>50.5</td>
+                            <td>C</td>
+                            <td>1</td>
                             <td>2022</td>
                             <td>CA</td>
                         </tr>
                         <tr>
-                            <td>INF 2086</td>
-                            <td>Alogithmique</td>
+                            <td>ICT201</td>
+                            <td>INTROUCTION TO SOFTWARE INGENING</td>
                             <td>6</td>
-                            <td>65</td>
+                            <td>83.00</td>
                             <td>A</td>
+                            <td>1</td>
+                            <td>2022</td>
+                            <td>CA</td>
+                        </tr>
+                        <tr>
+                            <td>ICT203</td>
+                            <td>DATABASE SYTEMS/</td>
+                            <td>5</td>
+                            <td>77.75</td>
+                            <td>A-</td>
                             <td>2</td>
                             <td>2022</td>
                             <td>CA</td>
                         </tr>
                         <tr>
-                            <td>INF 2245</td>
-                            <td>Statistiques et analyse des données</td>
-                            <td>6</td>
-                            <td>85</td>
+                            <td>ICT204</td>
+                            <td>INTRODUCTION TO OPERATING SYSTEM/</td>
+                            <td>5</td>
+                            <td>69.00</td>
+                            <td>B</td>
+                            <td>1</td>
+                            <td>2022</td>
+                            <td>CA</td>
+                        </tr>
+                        <tr>
+                            <td>ICT205</td>
+                            <td>INTRODUCTION TO PROGRAMMING IN .NET</td>
+                            <td>5</td>
+                            <td>81.00</td>
                             <td>A</td>
+                            <td>1</td>
+                            <td>2022</td>
+                            <td>CA</td>
+                        </tr>
+                        <tr>
+                            <td>ICT206</td>
+                            <td>INTRODUCTION TO COMPUTER NETWORK/</td>
+                            <td>5</td>
+                            <td>81.00</td>
+                            <td>A</td>
+                            <td>1</td>
+                            <td>2022</td>
+                            <td>CA</td>
+                        </tr>
+                        <tr>
+                            <td>ICT207</td>
+                            <td>SOFTWARE DEVELOPMENT IN JAVA/</td>
+                            <td>5</td>
+                            <td>82.75</td>
+                            <td>A</td>
+                            <td>1</td>
+                            <td>2022</td>
+                            <td>CA</td>
+                        </tr>
+                        <tr>
+                            <td>ICT208</td>
+                            <td>COMPUTER ARCHITECETURE/</td>
+                            <td>5</td>
+                            <td>78.00</td>
+                            <td>A-</td>
+                            <td>4</td>
+                            <td>2022</td>
+                            <td>CA</td>
+                        </tr>
+                        <tr>
+                            <td>ICT210</td>
+                            <td>DATABASE PROGRAMMING/</td>
+                            <td>5</td>
+                            <td>75.00</td>
+                            <td>A-</td>
                             <td>2</td>
                             <td>2022</td>
                             <td>CA</td>
                         </tr>
                         <tr>
-                            <td>INF 2050</td>
-                            <td>Base de données</td>
-                            <td>6</td>
-                            <td>74</td>
-                            <td>B+</td>
-                            <td>2</td>
+                            <td>ICT215</td>
+                            <td>INTRODUCTION TO COMPUTER NETWORKING/</td>
+                            <td>5</td>
+                            <td>55.75</td>
+                            <td>C+</td>
+                            <td>1</td>
                             <td>2022</td>
                             <td>CA</td>
                         </tr>
                         <tr>
-                            <td>INF 2075</td>
-                            <td>Structure de données en python</td>
-                            <td>6</td>
-                            <td>73</td>
-                            <td>B+</td>
+                            <td>ICT216</td>
+                            <td>NETWORK ADMINISTRATION/</td>
+                            <td>5</td>
+                            <td>68.00</td>
+                            <td>B</td>
                             <td>2</td>
                             <td>2022</td>
                             <td>CA</td>
-                        </tr>
-                        <tr>
-                            <td>INF 2156</td>
-                            <td>Programmation web</td>
-                            <td>6</td>
-                            <td>47</td>
-                            <td>D+</td>
-                            <td>2</td>
-                            <td>2022</td>
-                            <td>CANT</td>
                         </tr>
                     </tbody>
                 </table>
@@ -347,7 +397,7 @@
             <section class="w-100 d-flex flex-column align-items-center">
                 <span class="w-100 decision-data d-flex flex-column w-auto">
                     <span> Crédit Capitalisés: 60/60 (100.00%) </span>
-                    <span> Moyenne Générale Pondérée (MGP): 3.5/4 </span>
+                    <span> Moyenne Générale Pondérée (MGP): 3.39/4 </span>
                     <span> Decision: <b> ADMIS </b> </span>
                 </span>
             </section>
@@ -499,7 +549,7 @@
 
                             <?php
                             $type = 'png';
-                            $data = file_get_contents('https://api.qrserver.com/v1/create-qr-code/?data=124&amp;size=100x100');
+                            $data = file_get_contents('https://api.qrserver.com/v1/create-qr-code/?data=20R2198&amp;size=100x100');
                             $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
                             ?>
                             <?php echo '<div class="company-logo">
@@ -527,8 +577,8 @@
             </section>
             
         </main>
-        <a class="btn btn-primary" href="{{ route('export_pdf') }}"
-        wire:click="export_pdfs()">Export pdf</a>
+        {{-- <a class="btn btn-primary" href="{{ route('export_pdf') }}"
+        wire:click="export_pdfs()">Export pdf</a> --}}
     </div>
 
 </body>

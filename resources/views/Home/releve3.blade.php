@@ -161,7 +161,7 @@
                             <span class="fs-5 fw-bolder bold_part"> Noms et Prénoms: </span>
                             <span class="english_subtitle"> Surname and Name </span>
                         </div>
-                        <div class="form-value ps-4 pt-1 text-uppercase">EZO'O DAVID</div>
+                        <div class="form-value ps-4 pt-1 text-uppercase">KANOU FOKOU KENI STEVE</div>
                     </div>
                     <div class="d-flex form-item">
                         <div class="d-flex flex-column">
@@ -169,7 +169,7 @@
                             <span class="fs-5 fw-bolder bold_part"> Matricule: </span>
                             <span class="english_subtitle"> Registration N° </span>
                         </div>
-                        <div class="form-value ps-4 pt-1">20U4660</div>
+                        <div class="form-value ps-4 pt-1">19G2521</div>
                     </div>
                 </section>
                 <section class="w-100 d-flex align-items-center justify-content-start">
@@ -178,7 +178,7 @@
                             <span class="fs-5 fw-bolder bold_part"> Né(e) le: </span>
                             <span class="english_subtitle"> Born on </span>
                         </div>
-                        <div class="form-value ps-4 pt-1 text-uppercase">25/04/2000</div>
+                        <div class="form-value ps-4 pt-1 text-uppercase">07/10/1997</div>
                     </div>
                     &nbsp;
                     <div class="d-flex form-item ms-5 ps-5">
@@ -196,7 +196,7 @@
                             <span class="english_subtitle"> Domain </span>
                         </div>
                         <div class="form-value ps-4 pt-1 text-uppercase">
-                            SCIENCES MATHEMATIQUES ET INFORMATIQUE
+                            SCIENCES MATHEMATIQUES ET INFORMATIQUES
                         </div>
                     </div>
                 </section>
@@ -214,7 +214,7 @@
                             <span class="fs-5 fw-bolder bold_part"> Filière :  &nbsp;</span>
                             <span class="english_subtitle"> Discipline </span>
                         </div>
-                        <div class="form-value ps-4 pt-1">INFORMATIQUE</div>
+                        <div class="form-value ps-4 pt-1">INFORMATION AND COMMUNICATION TECHNOLOGIE FOR DEVELOPMENT</div>
                     </div>
                 </section>
   
@@ -231,7 +231,7 @@
                             <span class="fs-5 fw-bolder bold_part"> Année Academique: </span>
                             <span class="english_subtitle"> Academic year </span>
                         </div>
-                        <div class="form-value ps-4 pt-1">2021/2022</div>
+                        <div class="form-value ps-4 pt-1">2020/2021</div>
                     </div>
                 </section>
             </section>
@@ -282,64 +282,124 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>INF 2026</td>
-                            <td>Statistiques et analyse des données</td>
-                            <td>6</td>
-                            <td>74</td>
-                            <td>B+</td>
-                            <td>2</td>
-                            <td>2022</td>
+                            <td>ENGL104</td>
+                            <td>ENGLISH/</td>
+                            <td>3</td>
+                            <td>65.00</td>
+                            <td>B</td>
+                            <td>4</td>
+                            <td>2021</td>
                             <td>CA</td>
                         </tr>
                         <tr>
-                            <td>INF 2086</td>
-                            <td>Alogithmique</td>
-                            <td>6</td>
-                            <td>65</td>
+                            <td>ICT101</td>
+                            <td>INTRODUCTION TO BUSINESS INFORMATION SYSTEMS/</td>
+                            <td>5</td>
+                            <td>89.88</td>
                             <td>A</td>
-                            <td>2</td>
-                            <td>2022</td>
+                            <td>3</td>
+                            <td>2021</td>
                             <td>CA</td>
                         </tr>
                         <tr>
-                            <td>INF 2245</td>
-                            <td>Statistiques et analyse des données</td>
-                            <td>6</td>
-                            <td>85</td>
-                            <td>A</td>
-                            <td>2</td>
-                            <td>2022</td>
-                            <td>CA</td>
-                        </tr>
-                        <tr>
-                            <td>INF 2050</td>
-                            <td>Base de données</td>
-                            <td>6</td>
-                            <td>74</td>
-                            <td>B+</td>
-                            <td>2</td>
-                            <td>2022</td>
-                            <td>CA</td>
-                        </tr>
-                        <tr>
-                            <td>INF 2075</td>
-                            <td>Structure de données en python</td>
-                            <td>6</td>
-                            <td>73</td>
-                            <td>B+</td>
-                            <td>2</td>
-                            <td>2022</td>
-                            <td>CA</td>
-                        </tr>
-                        <tr>
-                            <td>INF 2156</td>
-                            <td>Programmation web</td>
-                            <td>6</td>
-                            <td>47</td>
+                            <td>ICT102</td>
+                            <td>OBJECT-ORIENTED PROGRAMMING/</td>
+                            <td>5</td>
+                            <td>43.50</td>
                             <td>D+</td>
                             <td>2</td>
-                            <td>2022</td>
+                            <td>2021</td>
                             <td>CANT</td>
+                        </tr>
+                        <tr>
+                            <td>ICT103</td>
+                            <td>INTRODUCTION TO PROGRAMMING/</td>
+                            <td>5</td>
+                            <td>42.25</td>
+                            <td>D+</td>
+                            <td>1</td>
+                            <td>2021</td>
+                            <td>CANT</td>
+                        </tr>
+                        <tr>
+                            <td>ICT104</td>
+                            <td>COMPUTERS SYSTEMS/</td>
+                            <td>6</td>
+                            <td>89.50</td>
+                            <td>A</td>
+                            <td>4</td>
+                            <td>2021</td>
+                            <td>CA</td>
+                        </tr>
+                        <tr>
+                            <td>ICT105</td>
+                            <td>INTRODUCTION TO ALGORITME</td>
+                            <td>5</td>
+                            <td>50.50</td>
+                            <td>C</td>
+                            <td>1</td>
+                            <td>2021</td>
+                            <td>CA</td>
+                        </tr>
+                        <tr>
+                            <td>ICT106</td>
+                            <td>DATA STRUCTURE AND PATTERNS/</td>
+                            <td>5</td>
+                            <td>44.83</td>
+                            <td>D+</td>
+                            <td>4</td>
+                            <td>2021</td>
+                            <td>CANT</td>
+                        </tr>
+                        <tr>
+                            <td>ICT107</td>
+                            <td>MATHEMATICS FOR COMPUTERS SCIENCES I/</td>
+                            <td>5</td>
+                            <td>65.00</td>
+                            <td>B</td>
+                            <td>3</td>
+                            <td>2021</td>
+                            <td>CA</td>
+                        </tr>
+                        <tr>
+                            <td>ICT108</td>
+                            <td>CREATIVE WEB APPLICATIONS/</td>
+                            <td>6</td>
+                            <td>56.75</td>
+                            <td>C+</td>
+                            <td>2</td>
+                            <td>2021</td>
+                            <td>CA</td>
+                        </tr>
+                        <tr>
+                            <td>ICT109</td>
+                            <td>DISCRETS MATHEMATICS I/</td>
+                            <td>5</td>
+                            <td>59.25</td>
+                            <td>C+</td>
+                            <td>3</td>
+                            <td>2021</td>
+                            <td>CA</td>
+                        </tr>
+                        <tr>
+                            <td>ICT110</td>
+                            <td>DATABASE ANALYSIS AND DESIGN/</td>
+                            <td>5</td>
+                            <td>44</td>
+                            <td>D+</td>
+                            <td>2</td>
+                            <td>2021</td>
+                            <td>CANT</td>
+                        </tr>
+                        <tr>
+                            <td>ICT111</td>
+                            <td>COMPUTER AND LOGIC ESSENTIALS/</td>
+                            <td>5</td>
+                            <td>58.50</td>
+                            <td>C+</td>
+                            <td>3</td>
+                            <td>2021</td>
+                            <td>CA</td>
                         </tr>
                     </tbody>
                 </table>
@@ -347,7 +407,7 @@
             <section class="w-100 d-flex flex-column align-items-center">
                 <span class="w-100 decision-data d-flex flex-column w-auto">
                     <span> Crédit Capitalisés: 60/60 (100.00%) </span>
-                    <span> Moyenne Générale Pondérée (MGP): 3.5/4 </span>
+                    <span> Moyenne Générale Pondérée (MGP): 2.34/4 </span>
                     <span> Decision: <b> ADMIS </b> </span>
                 </span>
             </section>
@@ -499,7 +559,7 @@
 
                             <?php
                             $type = 'png';
-                            $data = file_get_contents('https://api.qrserver.com/v1/create-qr-code/?data=124&amp;size=100x100');
+                            $data = file_get_contents('https://api.qrserver.com/v1/create-qr-code/?data=19G2521&amp;size=100x100');
                             $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
                             ?>
                             <?php echo '<div class="company-logo">
