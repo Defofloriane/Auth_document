@@ -9,7 +9,7 @@
 
             </i> </div>
         <div class="header_img"> <img src="https://i.imgur.com/hczKIze.jpg" alt=""> </div>
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css" /> -->
         <link rel="stylesheet" href="css/home.css">
 
     </header>
@@ -25,14 +25,14 @@
                                 <i class='bx bx-grid-alt nav_icon'></i> 
                                 <span class="nav_name">Dashboard</span>
                             </a>
-                    <a href="{{route('mapping')}}" class="nav_link">
+                    <a href="" class="nav_link">
                         <i class='bx bx-user nav_icon'></i> 
-                        <span class="nav_name">Releve1</span>
+                        <span class="nav_name">Releve</span>
                        
                         </a> 
-                        <a href="{{route('mapping1')}}" class="nav_link"> 
+                        <a href="#" class="nav_link"> 
                             <i class='bx bx-message-square-detail nav_icon'></i>
-                            <span class="nav_name">Releve2</span>
+                            <span class="nav_name">Messages</span>
                         </a>
                         <a href="#" class="nav_link"> 
                             <i class='bx bx-bookmark nav_icon'></i>
@@ -54,8 +54,8 @@
     {{-- <div class="height-100 bg-light">
         <h4>Main Components</h4>
     </div> --}}
-    <a id="dernieres-nouvelles">user new</a>
-    
+   <h4>mon code page 1</h4>
+   @include ('Home.releve3');
     <!--Container Main end-->
     <script type="text/javascript" src="js/home.js"></script>
     <script>

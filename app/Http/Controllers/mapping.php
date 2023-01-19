@@ -14,6 +14,6 @@ class mapping extends Controller
            "id" => "1"
           ])->get();
         //  echo($user[0]["email"]);
-        return View('Home.qrcode_generate',compact('user'));
+        return View('Home.mapping',compact('user'));
     }
 }

@@ -4,6 +4,7 @@ use App\Http\Controllers\AbsenController;
 use App\Http\Controllers\mapping;
 use App\Http\Controllers\Qrcodegenerate;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\Releve1;
 use App\Http\Controllers\scanController;
 use App\Http\Controllers\testController;
 use App\Http\Controllers\UserControllers;
@@ -30,5 +31,8 @@ Route::get('/registration', [UserControllers::class, 'registration'])->name('reg
 Route::post('/custom-registration', [UserControllers::class, 'customRegistration'])->name('register.custom');
 Route::get('/signout', [UserControllers::class, 'signOut'])->name('signout');
 //route Home
-Route::get('/page1', [Qrcodegenerate::class,'page1'])->name('page1');
 Route::get('/mapping', [mapping::class,'mapping'])->name('mapping');
+Route::get('/mapping1', [Releve1::class,'releve1'])->name('mapping1');
+Route::get('/mapping2', [Releve1::class,'releve2'])->name('mapping2');
+Route::get('/mapping3', [Releve1::class,'releve3'])->name('mapping3');
+
