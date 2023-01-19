@@ -144,13 +144,6 @@
                     <span> UNIVERSITY OF YAOUNDE 1 </span>
                 </div>
             </section>
-            <div>
-                @foreach ($user as $col)
-                    <li class="yo" style="background-color: red;">
-                        {{$col->email}}
-                    </li>               
-                @endforeach
-            </div>
         </header>
         <section class="w-100 d-flex flex-column align-items-center py-4" style="padding-bottom: 0px !important">
             <span class="fs-5 fw-normal"> FACULTE DES SCIENCES </span>
@@ -168,7 +161,7 @@
                             <span class="fs-5 fw-bolder bold_part"> Noms et Prénoms: </span>
                             <span class="english_subtitle"> Surname and Name </span>
                         </div>
-                        <div class="form-value ps-4 pt-1 text-uppercase">MATHEO DAVID</div>
+                        <div class="form-value ps-4 pt-1 text-uppercase">EZO'O DAVID</div>
                     </div>
                     <div class="d-flex form-item">
                         <div class="d-flex flex-column">

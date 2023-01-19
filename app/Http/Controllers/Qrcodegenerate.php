@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 use \PDF;
 use Dompdf\Dompdf;
+use Illuminate\Http\Request;
+use App\Models\User;
 use SimpleSoftwareIO\QrCode\Facades\QrCode;
 
 class Qrcodegenerate extends Controller
@@ -10,23 +12,26 @@ class Qrcodegenerate extends Controller
      function qrcode(){
         return view('Home.qrcode_generate');
     }
+    
 
-    function export_pdf(){
+    function export_pdf(Request $resquest){
       
     
         @include ('bootstraps');
     $qrcode =  QrCode::size(250)->generate('Make me into a QrCode!');
     
- 
-    $dompdf = new Dompdf();
-
     
-    $dompdf->loadHtml(view('Home.qrcode_generate'));
+    $dompdf = new Dompdf();
+    $user = User::where([
+        "id" => "1"
+       ])->get();
+    
+    $dompdf->loadHtml(view('Home.qrcode_generate',compact('user')));
     // $doc = new DOMDocument();
     // $dompdf->loadHTMLFile(view('qrcode_generate'));
   
    //  $dompdf->set_base_path("/www/public/css/releve.css");
-    $dompdf->set_base_path(__DIR__ . '/css/releve.css"');
+    $dompdf->setBasePath(__DIR__ . '/css/releve.css"');
     // (Optional) Setup the paper size and orientation
     $dompdf->setPaper('A4');
     
