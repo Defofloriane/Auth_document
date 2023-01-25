@@ -12,11 +12,11 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 Route::get('/welcome', [AbsenController::class, 'welcome'])->name('welcome');
-Route::get('/scan', [scanController::class, 'scan'])->name('scan');
+Route::get('/', [scanController::class, 'scan'])->name('scan');
 Route::get('/qrcode', [Qrcodegenerate::class, 'qrcode'])->name('qrcode');
 Route::get('/export_pdf', [Qrcodegenerate::class, 'export_pdf'])->name('export_pdf');
 Route::post('/validasi', [scanController::class, 'validasi'])->name('validasi');
