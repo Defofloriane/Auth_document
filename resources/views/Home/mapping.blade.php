@@ -23,11 +23,11 @@
                 <div class="nav_list">
                          <a href="#" class="nav_link ">
                                 <i class='bx bx-grid-alt nav_icon'></i> 
-                                <span class="nav_name">Dashboard</span>
+                                <span class="nav_name">Home</span>
                             </a>
                     <a href="{{route('mapping')}}" class="nav_link">
                         <i class='bx bx-user nav_icon'></i> 
-                        <span class="nav_name">Releve1</span>
+                        <span class="nav_name">Releve 1</span>
                        
                         </a> 
                         <a href="{{route('mapping1')}}" class="nav_link"> 

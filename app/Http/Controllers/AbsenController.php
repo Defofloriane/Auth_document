@@ -6,14 +6,18 @@ use App\Models\Absen;
 use App\Models\Etudiant;
 use Illuminate\Http\Request;
 
+
+
+
 class AbsenController extends Controller
 {
+  
     public function store(Request $request){
        $cek= Etudiant::where([
          'matricule' => $request->id_siswa,
        ])->first();
        if($cek){
-        return redirect('/')->with('gagal', $cek->matricule);
+        return redirect('/welcome')->with('gagal', $cek->matricule);
        }
        else{
       //  Absen::create(
@@ -22,11 +26,15 @@ class AbsenController extends Controller
       //     'tanggal' => date('Y-m-d'),
       //   ]
       //   );
-       return redirect('/')->with('sucess', 'Document Non Authentique');
+       return redirect('/welcome')->with('sucess', 'Document Non Authentique');
       }
     }
 
     public function welcome(){
+
+  
+
+      
       return View('welcome');
     }
 }

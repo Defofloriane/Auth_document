@@ -147,26 +147,8 @@
       <script>
         function onScanSuccess(decodedText, decodedResult) {
              $('#result').val(decodedText);
+             alert(decodedText);
             html5QrcodeScanner.clear().then(_ => {
-                // var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
-                // $.ajax({
-
-                //     // url: "{{ route('validasi') }}",
-                //     // type: 'POST',
-                //     // data: {
-                //     //     _methode: "POST",
-                //     //     _token: CSRF_TOKEN,
-                //     //     qr_code: id
-                //     // },
-                //     // // success: function(response) {
-                //     // //     if (response.status == 200) {
-                //     // //         alert('berhasil');
-                //     // //     } else {
-                //     // //         alert('gagal');
-                //     // //     }
-
-                //     // // }
-                // });
             }).catch(error => {
                 alert('something wrong');
             });

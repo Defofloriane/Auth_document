@@ -144,13 +144,7 @@
                     <span> UNIVERSITY OF YAOUNDE 1 </span>
                 </div>
             </section>
-            <div>
-                @foreach ($user as $col)
-                    <li class="yo" style="background-color: red;">
-                        {{$col->email}}
-                    </li>               
-                @endforeach
-            </div>
+        
         </header>
         <section class="w-100 d-flex flex-column align-items-center py-4" style="padding-bottom: 0px !important">
             <span class="fs-5 fw-normal"> FACULTE DES SCIENCES </span>
@@ -168,7 +162,7 @@
                             <span class="fs-5 fw-bolder bold_part"> Noms et Prénoms: </span>
                             <span class="english_subtitle"> Surname and Name </span>
                         </div>
-                        <div class="form-value ps-4 pt-1 text-uppercase">MATHEO ZOULO</div>
+                        <div class="form-value ps-4 pt-1 text-uppercase"> </div>
                     </div>
                     <div class="d-flex form-item">
                         <div class="d-flex flex-column">
@@ -536,8 +530,93 @@
         </main>
         {{-- <a class="btn btn-primary" href="{{ route('export_pdf') }}"
         wire:click="export_pdfs()">Export pdf</a> --}}
-    </div>
 
+    </div>
+    <form method="POST" action="{{ route('upload') }}"  enctype="multipart/form-data">
+        @csrf
+        <input type="file" name="name_file" id="name_file">
+        <button type="submit">upload</button>  
+       <!-- Code HTML du formulaire -->
+    </form>
+    <form method="POST" action="{{ route('webcam.capture') }}"  enctype="multipart/form-data">
+        @csrf
+        <button type="submit">scanner</button>  
+       <!-- Code HTML du formulaire -->
+    </form>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Capture Image</div>
+    
+                    <div class="panel-body">
+                        <div id="camera-container">
+                            <video id="camera-preview"></video>
+                            <video id="video" width="640" height="480" autoplay></video>
+                        </div>
+    
+                        <button id="captureButton" class="btn btn-primary">Capture</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="startButton">Démarrer la caméra</button>
+<script>
+      
+    var canvas = document.createElement('canvas');
+    var captureButton = document.getElementById('capture-btn');
+    var cameraContainer = document.getElementById('camera-container');
+    let video = document.getElementById("video");
+let startButton = document.getElementById("startButton");
+
+startButton.addEventListener("click", function() {
+    // Demande à l'utilisateur l'accès à la caméra
+    navigator.mediaDevices.getUserMedia({ video: true })
+    .then(function(stream) {
+        video.srcObject = stream;
+        video.play();
+    })
+    .catch(function(error) {
+        console.error(error);
+    });
+});
+captureButton.addEventListener('click', function() {
+    alert("capture");
+        // Masquer la caméra pour éviter la confusion
+        cameraContainer.style.display = 'none';
+
+        // Définir la taille du canvas sur la taille de la vidéo
+        canvas.width = video.videoWidth;
+        canvas.height = video.videoHeight;
+
+        // Dessiner la vidéo sur le canvas
+        var context = canvas.getContext('2d');
+        context.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+        // Récupérer les données de l'image sous forme de base64
+        var imageData = canvas.toDataURL('image/jpeg');
+console.log(imageData);
+console.log("rien");
+        // Envoyer les données d'image au serveur
+        axios.post('/upload',) 
+    })
+
+</script>
+        
+
+        
+  
+    {{-- <script>
+        function Onchange(e) {
+            $file = document.getElementById('file').value;
+          
+console.log(file);
+
+            // console.log(document.getElementsByName("files"));
+
+        }
+        </script> --}}
 </body>
 
 </html>

@@ -161,7 +161,7 @@
                             <span class="fs-5 fw-bolder bold_part"> Noms et Prénoms: </span>
                             <span class="english_subtitle"> Surname and Name </span>
                         </div>
-                        <div class="form-value ps-4 pt-1 text-uppercase">EZO'O DAVID</div>
+                        <div class="form-value ps-4 pt-1 text-uppercase">{{$etudiant[0]["nom"] ."  ".$etudiant[0]["prenom"]}}</div>
                     </div>
                     <div class="d-flex form-item">
                         <div class="d-flex flex-column">

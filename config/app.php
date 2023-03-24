@@ -134,7 +134,9 @@ return [
     |
     */
 
-  
+    'tesseract' => [
+        'path' => env('TESSDATA_PREFIX', ''),
+    ],
 
     'providers' => [
 
@@ -165,11 +167,12 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-
+        Intervention\Image\ImageServiceProvider::class,
         /*
          * Package Service Providers...
          */
-        Barryvdh\DomPDF\ServiceProvider::class,
+        // "barryvdh/laravel-dompdf": "^2.0",
+        // Barryvdh\DomPDF\ServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -194,8 +197,6 @@ return [
  
 
     'aliases' => [
-        
-        'PDF' => Barryvdh\DomPDF\Facade::class,
         'App' => Illuminate\Support\Facades\App::class,
         'Arr' => Illuminate\Support\Arr::class,
         'Artisan' => Illuminate\Support\Facades\Artisan::class,
@@ -235,7 +236,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-       
+        'Image' => Intervention\Image\Facades\Image::class,
 
     ],
 
